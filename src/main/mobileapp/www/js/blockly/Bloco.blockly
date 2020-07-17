@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="" resourceType="JS" ruleDescription="Bloco" ruleName="Bloco" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
-  <metadata scale="1" scrollx="488.4000000000003" scrolly="-56.60000000000002" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="550.4" scrolly="-54.599999999999966" target="q~hOdfAQ;5#wE?A9b.`L"/>
+  <block colour="#fca03b" id="q~hOdfAQ;5#wE?A9b.`L" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-412" y="128">
+    <field name="NAME">openRomano</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#487f7f" dependencyby="q~hOdfAQ;5#wE?A9b.`L" id="!nK@`[FXN=D9@Am0H![J" multilayer="true" namespace="cronapi.util.openReport" origintype="procedures_openreport_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20Relat%C3%B3rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20responsavel%20por%20abrir%20um%20relat%C3%B3rio.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Relat%C3%B3rio%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.openReport%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.openReport%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_openreport_callnoreturn">
+        <mutation name="{{cronapi.util.openReport}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Relatório"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="dateFo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="doublelegal"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="numerox"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="name"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="verdOrFal"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#487f7f" dependencyby="q~hOdfAQ;5#wE?A9b.`L" id="y{C#WEdfKF$27Ot!Z~kb" origintype="util_report_list" output="true" type="util_report_list">
+            <mutation>
+              <arg name="reports/teste.report" value="reports/teste.report"/>
+              <arg name="reports/romano.report" value="reports/romano.report"/>
+            </mutation>
+            <field name="SELECT">reports/romano.report</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <field name="NAME">Executar</field>
     <comment h="80" pinned="false" w="160">Bloco</comment>
@@ -11,7 +36,7 @@
         <value name="ARG0">
           <block colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=")$$%aeFzhvf:`|q6Z?X0" origintype="util_report_list" output="true" type="util_report_list">
             <mutation>
-              <arg name="reports/teste.report" value="reports/teste.report"/>
+              <arg name="" value=""/>
             </mutation>
             <field name="SELECT">reports/teste.report</field>
           </block>

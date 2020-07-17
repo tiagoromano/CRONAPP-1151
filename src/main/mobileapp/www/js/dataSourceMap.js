@@ -19,3 +19,4 @@ window.dataSourceMap["app.roleManager"] = { customId: "roleManager", serviceUrl:
 window.dataSourceMap["app.Role"] = { customId: "app.entity.Role", serviceUrl: "api/cronapi/crud/app.entity.Role", serviceUrlODATA: "/api/cronapi/odata/v2/app/Role" };
 window.dataSourceMap["app.securables"] = { customId: "securables", serviceUrl: "api/cronapi/odata/v2/app/query421006/", serviceUrlODATA: "/api/cronapi/odata/v2/app/securables" };
 window.dataSourceMap["app.UserSecurable"] = { customId: "app.entity.UserSecurable", serviceUrl: "api/cronapi/crud/app.entity.UserSecurable", serviceUrlODATA: "/api/cronapi/odata/v2/app/UserSecurable" };
+window.dataSourceMap["app.Teste"] = { customId: "app.entity.Teste", serviceUrl: "api/cronapi/crud/app.entity.Teste", serviceUrlODATA: "/api/cronapi/odata/v2/app/Teste" };

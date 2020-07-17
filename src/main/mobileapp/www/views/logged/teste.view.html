@@ -1,0 +1,128 @@
+<ion-view cache-view="false" hide-back-button="true" role="region">
+    <ion-header-bar role="heading" class="bar bar-header bar-positive" xattr-theme="bar-positive"
+                    data-component="crn-ion-header-bar">
+        <div side="left" class="buttons buttons-left header-item">
+            <button aria-labelledby="left_navicon_sr" class="button button-clear"
+                    ng-if="!Teste.inserting && !Teste.editing" menu-toggle="left"
+                    data-component="crn-button" xattr-type="button-clear">
+                <i class="icon ion-navicon"></i>
+                <span id="left_navicon_sr"
+                      class="sr-only">{{'Accessibility.Button.Aria.Label.NavIcon' | translate}}</span>
+            </button>
+            <button aria-labelledby="left_arrowback_sr" class="button button-clear"
+                    ng-if="Teste.inserting || Teste.editing"
+                    ng-click="Teste.cancel()" data-component="crn-button" xattr-type="button-clear">
+                <i class="icon ion-ios-arrow-back"></i>
+                <span id="left_arrowback_sr" class="sr-only">{{'Roles.view.Voltar' | translate}}</span>
+            </button>
+        </div>
+        <h1 class="title">Teste</h1>
+        <div side="right" class="buttons buttons-right header-item">
+            <button aria-labelledby="right_plus_sr" class="button button-clear"
+                    ng-if="!Teste.inserting && !Teste.editing"
+                    ng-click="Teste.startInserting()" data-component="crn-button"
+                    xattr-type="button-clear">
+                <i class="icon ion-ios-plus-empty"></i>
+                <span id="right_plus_sr" class="sr-only">{{'Accessibility.Button.Aria.Label.Add' | translate}}</span>
+            </button>
+            <button aria-labelledby="right_checkmark_sr" class="button button-clear"
+                    ng-if="Teste.inserting || Teste.editing"
+                    ng-click="Teste.post()" data-component="crn-button" xattr-type="button-clear">
+                <i class="icon ion-ios-checkmark"></i>
+                <span id="right_checkmark_sr"
+                      class="sr-only">{{'Accessibility.Button.Aria.Label.Save' | translate}}</span>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="component-holder ng-binding ng-scope ui-draggable ui-draggable-handle"
+             data-component="crn-datasource" id="crn-datasource-906854">
+            <datasource data-component="crn-datasource"  name="Teste"
+                        entity="app.Teste" keys="_objectKey" rows-per-page="10"
+                        delete-message="Deseja remover?" class=""
+                        schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;doublelegal&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dateFo&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numerox&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;verdOrFal&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" ></datasource>
+        </div>
+
+        <div crn-datasource="Teste" class=""
+             ng-hide="Teste.editing || Teste.inserting">
+            <div class="component-holder ng-binding ng-scope" data-component="crn-ion-list" id="crn-ion-list-main">
+                <cron-list ng-model="vars.cronlistTeste" id="ion-list-main"
+                           options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Teste&quot;,&quot;entity&quot;:&quot;app.Teste&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Teste&quot;,&quot;customId&quot;:&quot;Teste&quot;,&quot;name&quot;:&quot;Teste&quot;,&quot;customQueryName&quot;:&quot;app.Teste&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Teste&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;doublelegal&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dateFo&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numerox&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;verdOrFal&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;doublelegal&quot;,&quot;type&quot;:&quot;Decimal&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dateFo&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numerox&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;verdOrFal&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;app.Teste&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;name&quot;,&quot;headerText&quot;:&quot;Name&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[]}"
+                           class="" style="">
+                </cron-list>
+            </div>
+        </div>
+        <div ng-show="Teste.editing || Teste.inserting">
+            <form crn-datasource="Teste">
+                <div class="list"
+                     ng-disabled="!Teste.editing &amp;&amp; !Teste.inserting">
+            <!-- name begin -->
+            <label for="textinput-name-20767" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating">
+                <span class="input-label">Name</span>
+                <input
+                        type="text"
+                        placeholder="Name"
+                        ng-model="Teste.active.name"
+                        id="textinput-name-20767"
+                        name="textinput-name"
+				
+                        mask=""
+				>
+            </label>
+            <!-- dateFo begin -->
+            <label for="textinput-dateFo-20767" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating">
+                <span class="input-label">Date Fo</span>
+                <input aria-label="Date Fo"
+                       type="datetime"
+                       placeholder="Date Fo"
+                       ng-model="Teste.active.dateFo"
+                       id="textinput-dateFo-20767" name="textinput-dateFo"
+                       
+                       mask="" >
+            </label>
+            <!-- numerox begin -->
+            <label for="textinput-numerox-20767" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating">
+                <span class="input-label">Numerox</span>
+                <input aria-label="Numerox" type="integer"
+                       placeholder="Numerox"
+                       ng-model="Teste.active.numerox"
+                       id="textinput-numerox-20767" name="textinput-numerox"
+                       
+                       mask="" >
+            </label>
+            <!-- doublelegal begin -->
+            <label for="textinput-doublelegal-20767" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating">
+                <span class="input-label">Doublelegal</span>
+                <input aria-label="Doublelegal" type="number"
+                       placeholder="Doublelegal"
+                       ng-model="Teste.active.doublelegal"
+                       id="textinput-doublelegal-20767" name="textinput-doublelegal"
+                       
+                       mask="" >
+            </label>
+            <!-- verdOrFal begin -->
+			<div class="component-holder ng-binding ng-scope" data-component="crn-checkbox" id="crn-checkbox-verdOrFal">
+                <label class="item item-checkbox">
+                    <span>Verd Or Fal</span>
+                    <div for="textinput-verdOrFal" class="checkbox checkbox-assertive">
+                        <input aria-label="Verd Or Fal"
+                               type="checkbox" ng-model="Teste.active.verdOrFal"
+                               id="textinput-verdOrFal" name="textinput-verdOrFal"
+                               >
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+                    <!-- NtoN  -->
+                    <!-- NtoN  end-->
+            </form>
+        </div>
+    </ion-content>
+</ion-view>
